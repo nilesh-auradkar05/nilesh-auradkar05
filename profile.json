@@ -1,0 +1,130 @@
+{
+  "username": "nilesh-auradkar05",
+  "name_first": "Nilesh",
+  "name_last": "Auradkar",
+  "prompt_chip": "~/nilesh $ build --grounded",
+  "eyebrow": "AI  ·  ML SYSTEMS  ·  INFERENCE",
+  "roles": "GENAI / ML ENGINEER  ·  ML SYSTEMS  ·  DATA PLATFORMS",
+  "tagline": "Agents that cite their sources. Pipelines that pass their tests.",
+  "meta": "M.S. CS · BINGHAMTON UNIVERSITY  ·  2.5 YRS ML ENGINEERING @ TCS",
+  "status": "OPEN TO FULL-TIME ROLES",
+
+  "links": [
+    {"label": "GITHUB",   "value": "nilesh-auradkar05", "url": "https://github.com/nilesh-auradkar05"},
+    {"label": "LINKEDIN", "value": "", "url": ""},
+    {"label": "EMAIL",    "value": "", "url": ""},
+    {"label": "PORTFOLIO","value": "", "url": ""}
+  ],
+
+  "about": {
+    "terminal_title": "nilesh@binghamton: ~",
+    "lines": [
+      ["$", "whoami"],
+      [">", "Nilesh Auradkar — GenAI / ML engineer"],
+      ["$", "cat education.txt"],
+      [">", "M.S. Computer Science — Binghamton University (SUNY)"],
+      ["$", "cat experience.txt"],
+      [">", "ML Engineer — Tata Consultancy Services — ~2.5 yrs"],
+      ["$", "ls focus/"],
+      [">", "agentic-rag/  inference-opt/  post-training/  data-platforms/"],
+      ["$", "cat principles.md"],
+      [">", "Every claim cited. Every layer tested. Every cost budgeted."]
+    ],
+    "sidebar": [
+      ["STATUS", "Open to full-time GenAI / ML & SWE roles"],
+      ["BUILDING", "Alpha Analyst — cited equity research agent"],
+      ["STUDYING", "Inference optimization, GPU kernels"],
+      ["PRIMARY", "Python  ·  SQL  ·  TypeScript"]
+    ]
+  },
+
+  "record": [
+    {"value": "2.5", "unit": "yrs", "label": "ML engineering in production at Tata Consultancy Services"},
+    {"value": "0.935", "unit": "", "label": "grounded-claim rate on Alpha Analyst memos (30-memo eval)"},
+    {"value": "10M", "unit": "", "label": "orders modeled in a Snowflake + dbt analytics warehouse"},
+    {"value": "{contributions}", "unit": "", "label": "GitHub contributions in the last 12 months — live"}
+  ],
+
+  "publications": [
+    {
+      "arxiv": "2610.07311",
+      "kicker": "ARXIV:2610.07311  ·  CS.AI  ·  OCT 2026  ·  PREPRINT",
+      "title": "Understanding and Mitigating Inference-Time Overreliance Using Agentic Memory",
+      "authors": ["Luoxi Tang", "Yuqiao Meng", "Nilesh Auradkar", "Muchao Ye", "Dazheng Zhang", "Zhaohan Xi"],
+      "self": "Nilesh Auradkar",
+      "summary": "Retrieved memories can distort an agent's inference even when they are benign, correctly stored and appropriately retrieved. We name this memory over-reliance and show it is strongest under partial query-memory overlap. MEMTRIM indexes evidence at write time and controls its reuse at read time, cutting over-reliance while keeping the benefits of useful memory.",
+      "tags": ["Agentic memory", "LLM agents", "Inference-time reliability", "No retraining"],
+      "flow": ["past experience", "write-time index", "memory store", "read-time trim", "agent inference"],
+      "flow_highlight": [1, 3],
+      "flow_caption": "EMBEDDING-BASED + STRUCTURED MEMORY",
+      "bibkey": "tang2026overreliance",
+      "year": 2026,
+      "primary_class": "cs.AI"
+    }
+  ],
+
+  "projects": [
+    {
+      "slug": "alpha-analyst",
+      "repo": "Financial-Analyst-Agent",
+      "kicker": "01  ·  AGENTIC RAG  ·  LANGGRAPH  ·  2026",
+      "title": "Alpha Analyst",
+      "subtitle": "Ticker in, cited investment memo out.",
+      "desc": "A LangGraph research agent that pulls market data, news and SEC 10-K evidence, drafts an investment memo where every factual sentence cites a numbered source, then runs a claim-level grounding check before it ships.",
+      "stack": ["LangGraph", "FastAPI", "Qdrant", "Bedrock", "Cohere Rerank", "LangSmith", "Prometheus"],
+      "metrics": [["0.935", "grounded claims"], ["0.923", "citation coverage"], ["32.6s", "p50 end-to-end"], ["~$4", "projected / month"]],
+      "flow": ["research_news", "fetch_stock", "retrieve_filings", "analyze_sentiment", "draft_memo", "verify_memo"]
+    },
+    {
+      "slug": "food-delivery",
+      "repo": "Food-Delivery-Intelligence-Platform-End-to-End-Data-Engineering-AI-Analytics",
+      "kicker": "02  ·  DATA ENGINEERING + LLM  ·  2026",
+      "title": "Food Delivery Intelligence",
+      "subtitle": "10M orders, from raw CSV to an AI-queryable warehouse.",
+      "desc": "Batch platform that lands Zomato-style delivery data in S3, models it in Snowflake with dbt under Airflow 3, and puts guardrailed LLM analytics on top through Azure AI Foundry, with SQL parsed and checked by sqlglot.",
+      "stack": ["S3", "Snowflake", "dbt", "Airflow 3", "Azure AI Foundry", "sqlglot", "Streamlit"],
+      "metrics": [["10M", "orders"], ["~23M", "order items"], ["148,541", "restaurants"], ["37", "guardrail tests"]],
+      "flow": ["Amazon S3", "Snowflake", "dbt models", "Airflow 3", "LLM layer"]
+    },
+    {
+      "slug": "retail-cdc",
+      "repo": "Walmart-DE",
+      "kicker": "03  ·  ELT  ·  MEDALLION LAKEHOUSE  ·  2026",
+      "title": "Retail CDC Lakehouse",
+      "subtitle": "Change data in, slowly-changing truth out.",
+      "desc": "Airflow 3 (CeleryExecutor) orchestrates CDC ingestion into Databricks and dbt transformations through bronze, silver and gold, with dbt test gates after every layer and source-freshness checks.",
+      "stack": ["Airflow 3", "Databricks", "dbt", "Delta Lake", "Databricks SDK", "Docker"],
+      "metrics": [["3", "medallion layers"], ["5", "SCD-2 dimensions"], ["6", "tables in one OBT"], ["~300K", "CDC rows"]],
+      "flow": ["CDC source", "bronze", "silver", "gold", "fact_orders"]
+    }
+  ],
+
+  "bench": [
+    {"repo": "RLHF-Playground", "kicker": "POST-TRAINING", "title": "RLHF Playground", "desc": "End-to-end RLHF training path for Qwen 3.5 4B using OpenRLHF.", "lang": "Jupyter · OpenRLHF"},
+    {"repo": "InferenceForge", "kicker": "INFERENCE", "title": "InferenceForge", "desc": "Inference-engineering optimization techniques, implemented from scratch.", "lang": "Python"},
+    {"repo": "DeepSeekV3_replica", "kicker": "ARCHITECTURE", "title": "DeepSeek-V3 Replica", "desc": "Experimental implementation of the DeepSeek-V3 paper.", "lang": "Python · MIT"},
+    {"repo": "VLM-Playground", "kicker": "COMPRESSION", "title": "VLM Pruning Bench", "desc": "Structured pruning vs. quantization vs. recovery tuning on Qwen2.5-VL-7B.", "lang": "PyTorch"},
+    {"repo": "DrGRPO-Reinforced-Instruction-Fine-Tuning", "kicker": "RL FINE-TUNING", "title": "Dr. GRPO", "desc": "Reinforced instruction fine-tuning that tracks the policy drifting toward better behavior.", "lang": "Jupyter"},
+    {"repo": "CopilotX-MCP-Enabled-Agentic-RAG-Copilot", "kicker": "AGENTS · MCP", "title": "CopilotX", "desc": "RAG + tool-calling copilot with MCP context sharing, evals and guardrails on AWS.", "lang": "FastAPI · AWS"}
+  ],
+
+  "toolkit": [
+    {"label": "LANGUAGES", "items": ["Python", "SQL", "TypeScript", "C++", "Rust"], "note": "python-first, typed where it counts"},
+    {"label": "LLMS & AGENTS", "items": ["LangGraph", "RAG", "MCP", "LangSmith", "Rerankers"], "note": "grounding, citations, evals"},
+    {"label": "TRAINING & INFERENCE", "items": ["PyTorch", "OpenRLHF", "GRPO", "PEFT", "Pruning"], "note": "post-training + compression"},
+    {"label": "ML SYSTEMS", "items": ["MLflow", "Metaflow", "XGBoost", "LightGBM", "Feast"], "note": "experiment to registry"},
+    {"label": "DATA PLATFORMS", "items": ["Airflow", "dbt", "Databricks", "Snowflake", "Spark"], "note": "medallion, SCD-2, CDC"},
+    {"label": "CLOUD & SERVING", "items": ["AWS", "Azure AI Foundry", "FastAPI", "Docker", "Qdrant"], "note": "budgeted, observable"}
+  ],
+
+  "in_progress": [
+    {"repo": "Causal-Dynamic-Pricing-Inside-Airbnb-Revenue-Optimization", "title": "Causal Dynamic Pricing", "desc": "Nightly price for every listing, 365 days out, re-optimised daily.", "tag": "PRICING"},
+    {"repo": "Bluesky-RealTime-Content-Recommendation", "title": "Bluesky Real-Time Feed", "desc": "Two-stage retrieve-then-rank short-form feed over the live network.", "tag": "RECSYS"},
+    {"repo": "Real-Time-Banking-Transaction-Lakehouse-and-Financial-Reconciliation-Platform", "title": "Banking Reconciliation Lakehouse", "desc": "Settlements, refunds and chargebacks reconciled into auditable records.", "tag": "STREAMING"},
+    {"repo": "PulsePress", "title": "PulsePress", "desc": "Event-driven publishing and subscription platform.", "tag": "SYSTEMS"}
+  ],
+
+  "footer_signature": "Nilesh",
+  "footer_line": "Models that show their work. Pipelines that prove it.",
+  "footer_meta": "MODELS  ·  AGENTS  ·  PIPELINES  —  ENGINEERED END TO END"
+}
