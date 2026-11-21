@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-<img src="assets/cards/record.svg" width="100%" alt="On the record: 2.5 yrs ML engineering in production at Tata Consultancy Services; 0.935  grounded-claim rate on Alpha Analyst memos (30-memo eval); 10M  orders modeled in a Snowflake + dbt analytics warehouse; 601  GitHub contributions in the last 12 months — live">
+<img src="assets/cards/record.svg" width="100%" alt="On the record: 2.5 yrs ML engineering in production at Tata Consultancy Services; 0.935  grounded-claim rate on Alpha Analyst memos (30-memo eval); 10M  orders modeled in a Snowflake + dbt analytics warehouse; 625  GitHub contributions in the last 12 months — live">
 </p>
 
 <p align="center">
@@ -74,7 +74,7 @@
 </p>
 
 <p align="center">
-<img src="assets/cards/heatmap.svg" width="100%" alt="601 contributions in the last year, 96 active days, longest streak 5 days">
+<img src="assets/cards/heatmap.svg" width="100%" alt="625 contributions in the last year, 98 active days, longest streak 7 days">
 </p>
 
 <p align="center">
