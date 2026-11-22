@@ -14,7 +14,9 @@ Local build: `pip install "fonttools[woff]" pillow && python scripts/build.py` (
 
 Why SVG cards: GitHub strips CSS from Markdown and renders images in a sandbox that blocks external fonts and images,
 so each card embeds a woff2 subset of only the glyphs it uses (Instrument Serif, JetBrains Mono, Inter; all SIL OFL).
-Animations are decorative only; every card is fully legible if the viewer pauses or blocks them.
+Every card is rendered twice (assets/cards/light, assets/cards/dark) and served through <picture> with
+prefers-color-scheme, so the README follows the visitor's GitHub theme. Colors live in the LIGHT / DARK
+Theme objects at the top of scripts/build.py (Primer-aligned neutrals + one blue accent); change them there only.
 
 Private-repo contributions: add a classic PAT with `read:user` as repo secret `GH_STATS_TOKEN`.
 Links: fill `links[].value` / `links[].url` in `profile.json`; empty entries are skipped.
