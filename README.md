@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/dark/record.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/record.svg"><img src="assets/cards/light/record.svg" width="100%" alt="On the record: 2.5 yrs ML engineering in production at Tata Consultancy Services; 0.935  grounded-claim rate on Alpha Analyst memos (30-memo eval); 10M  orders modeled in a Snowflake + dbt analytics warehouse; 652  GitHub contributions in the last 12 months — live"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/dark/record.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/record.svg"><img src="assets/cards/light/record.svg" width="100%" alt="On the record: 2.5 yrs ML engineering in production at Tata Consultancy Services; 0.935  grounded-claim rate on Alpha Analyst memos (30-memo eval); 10M  orders modeled in a Snowflake + dbt analytics warehouse; 672  GitHub contributions in the last 12 months — live"></picture>
 </p>
 
 <p align="center">
@@ -74,7 +74,7 @@
 </p>
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/dark/heatmap.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/heatmap.svg"><img src="assets/cards/light/heatmap.svg" width="100%" alt="652 contributions in the last year, 101 active days, longest streak 10 days"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/dark/heatmap.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/heatmap.svg"><img src="assets/cards/light/heatmap.svg" width="100%" alt="672 contributions in the last year, 102 active days, longest streak 11 days"></picture>
 </p>
 
 <p align="center">
